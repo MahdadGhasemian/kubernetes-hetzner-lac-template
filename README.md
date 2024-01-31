@@ -1,5 +1,7 @@
 # Terraform
 
+![Hetzner + Terrafom = Kubernetes](./.images/hetzner_terraform_kubernetes.png)
+
 ## Kube-Hetzner
 
 - This template was created from [kube-hetzner](https://github.com/kube-hetzner/terraform-hcloud-kube-hetzner/blob/master/kube.tf.example) library.
@@ -43,6 +45,8 @@ tmp_script=$(mktemp) && curl -sSL -o "${tmp_script}" https://raw.githubuserconte
 # Before running 'terraform apply', go through the kube.tf file and fill it with your desired values.
 ```
 
+![images_snapshots](./.images/x86_and_arm64_images_snapshots.png){ width=50% }
+
 3- Create an ed25519 ssh key
 
 ```bash
@@ -75,6 +79,19 @@ grafana_admin_password       = "changeme"
 terraform init
 terraform apply
 ```
+
+## The resources will be created
+
+- Load Balancer:
+  ![Load Balancer](./.images/load_balancers.png){ width=50% }
+- Servers:
+  ![Servers](./.images/servers.png){ width=50% }
+- Network:
+  ![Network](./.images/networks.png){ width=50% }
+- Firewal:
+  ![Firewal](./.images/firewalls.png){ width=50% }
+- SSH Key:
+  ![SSH Key](./.images/ssh_keys.png){ width=50% }
 
 ## Connect domain to the services
 
