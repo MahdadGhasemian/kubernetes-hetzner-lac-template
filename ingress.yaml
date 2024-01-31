@@ -11,7 +11,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`traefik.deleteme.ir`)
+      match: Host(`traefik.mahdad.me`)
       services:
         - name: api@internal
           kind: TraefikService
@@ -28,7 +28,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`longhorn.deleteme.ir`)
+      match: Host(`longhorn.mahdad.me`)
       priority: 10
       services:
         - name: longhorn-frontend
@@ -48,13 +48,13 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`argocd.deleteme.ir`)
+      match: Host(`argocd.mahdad.me`)
       priority: 10
       services:
         - name: argocd-server
           port: 80
     - kind: Rule
-      match: Host(`argocd.deleteme.ir`) && Headers(`Content-Type`, `application/grpc`)
+      match: Host(`argocd.mahdad.me`) && Headers(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: argocd-server
@@ -75,7 +75,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`prometheus.deleteme.ir`)
+      match: Host(`prometheus.mahdad.me`)
       priority: 10
       services:
         - name: prometheus-server
@@ -95,7 +95,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`grafana.deleteme.ir`)
+      match: Host(`grafana.mahdad.me`)
       priority: 10
       services:
         - name: grafana
