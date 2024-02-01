@@ -95,11 +95,6 @@ terraform apply
 
 ## Connect domain to the services
 
-### Cloudflare
-
-![Cloudflare DNS](./.images/cloudflare_dns.png){ width=50% }
-![Cloudflare SSL](./.images/cloudflare_ssl.png){ width=50% }
-
 ### Config traefik ingress
 
 ```bash
