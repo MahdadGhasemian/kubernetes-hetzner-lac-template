@@ -71,6 +71,10 @@ prometheus_storage_size      = "2Gi"
 grafana_storageclass_name    = "longhorn"
 grafana_storage_size         = "2Gi"
 grafana_admin_password       = "changeme"
+traefik_hostname             = "traefik.example.com"
+longhorn_hostname            = "longhorn.example.com"
+argocd_hostname              = "argocd.example.com"
+prometheus_hostname          = "prometheus.example.com"
 ```
 
 5- Now you can edit kube.tf and other files and then make k3s instance
@@ -92,14 +96,6 @@ terraform apply
   ![Firewal](./.images/firewalls.png){ width=50% }
 - SSH Key:
   ![SSH Key](./.images/ssh_keys.png){ width=50% }
-
-## Connect domain to the services
-
-### Config traefik ingress
-
-```bash
-kubectl apply -f ingress.yaml --kubeconfig=k3s_kubeconfig.yaml
-```
 
 ## Get Argocd Password
 

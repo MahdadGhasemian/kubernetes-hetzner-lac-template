@@ -23,3 +23,9 @@ provider "helm" {
     config_path = "./k3s_kubeconfig.yaml"
   }
 }
+
+# Kubernets Provider
+provider "kubernetes" {
+  config_path = "./k3s_kubeconfig.yml"
+}
+

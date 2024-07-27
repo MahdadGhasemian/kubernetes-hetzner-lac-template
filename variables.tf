@@ -99,3 +99,32 @@ variable "grafana_admin_password" {
   default     = ""
 }
 
+# Traefik Host name
+variable "traefik_hostname" {
+  description = "Hostname for Traefik IngressRoute"
+  default     = "traefik.example.com"
+}
+
+# Longhorn Host name
+variable "longhorn_hostname" {
+  description = "Hostname for Longhorn IngressRoute"
+  default     = "longhorn.example.com"
+}
+
+# Argocd Host name
+variable "argocd_hostname" {
+  description = "Hostname for ArgoCD IngressRoute"
+  default     = "argocd.example.com"
+}
+
+# Prometheus Host name
+variable "prometheus_hostname" {
+  description = "Hostname for Prometheus IngressRoute"
+  default     = "prometheus.example.com"
+}
+
+# Grafana Host name
+variable "grafana_hostname" {
+  description = "Hostname for Grafana IngressRoute"
+  default     = "grafana.example.com"
+}
